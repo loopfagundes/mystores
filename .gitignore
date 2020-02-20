@@ -52,20 +52,8 @@ local.properties
 # Locally stored "Eclipse launch configurations"
 *.launch
 
-# PyDev specific (Python IDE for Eclipse)
-*.pydevproject
-
-# CDT-specific (C/C++ Development Tooling)
-.cproject
-
-# CDT- autotools
-.autotools
-
 # Java annotation processor (APT)
 .factorypath
-
-# PDT-specific (PHP Development Tools)
-.buildpath
 
 # sbteclipse plugin
 .target
@@ -91,7 +79,6 @@ local.properties
 .worksheet
 
 ### Eclipse Patch ###
-# Eclipse Core
 .project
 
 # JDT-specific (Eclipse Java Development Tools)
@@ -103,8 +90,6 @@ local.properties
 .sts4-cache/
 
 ### Intellij ###
-# Covers JetBrains IDEs: IntelliJ, RubyMine, PhpStorm, AppCode, PyCharm, CLion, Android Studio and WebStorm
-# Reference: https://intellij-support.jetbrains.com/hc/en-us/articles/206544839
 
 **.idea
 **.iml
@@ -119,13 +104,3 @@ cmake-build-*/
 out/
 
 *.ipr
-
-# Sonarlint plugin
-.idea/**/sonarlint/
-
-# SonarQube Plugin
-.idea/**/sonarIssues.xml
-
-# Markdown Navigator plugin
-.idea/**/markdown-navigator.xml
-.idea/**/markdown-navigator/
