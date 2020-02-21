@@ -1,7 +1,9 @@
 ## Project My Store
 
-i'm work with:
+I'm work with:
+
 - IDE Intellij Community 2019.3.3
+- Java
 - Junit 5
 - Maven
     
