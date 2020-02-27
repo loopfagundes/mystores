@@ -7,7 +7,7 @@ import org.openqa.selenium.WebElement;
 public class LoginAppObject {
     private WebDriver driver;
 
-    public LoginAppObject(WebDriver driver) {
+    public LoginAppObject(WebDriver driver)  {
         this.driver = driver;
     }
 
