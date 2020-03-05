@@ -2,14 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e0164bd2-4a48-4a60-b589-f941e5c2b461" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/tasks/AuthenticationTask.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/tasks/MyAccountTask.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/appobjects/BuyProductAppObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/appobjects/MyAccountAppObject.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/appobjects/LoginAppObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/appobjects/AuthenticationAppObject.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tasks/BuyProductTask.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tasks/LoginTask.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/testcases/MyStoreTestCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testcases/BuySuccessfullyTestCase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/frameworks/BaseTestFw.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/frameworks/BaseTestFw.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/appobjects/AuthenticationAppObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/appobjects/AuthenticationAppObject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tasks/AuthenticationTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tasks/AuthenticationTask.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/testcases/BuySuccessfullyTestCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testcases/BuySuccessfullyTestCase.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,6 +42,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="ignore.virus.scanning.warn.message" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../com.academia.prova" />
     <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
   </component>
