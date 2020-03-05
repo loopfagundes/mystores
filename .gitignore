@@ -64,9 +64,6 @@ local.properties
 # TeXlipse plugin
 .texlipse
 
-# STS (Spring Tool Suite)
-.springBeans
-
 # Code Recommenders
 .recommenders/
 
@@ -91,8 +88,8 @@ local.properties
 
 ### Intellij ###
 
-**.idea
-**.iml
+*.idea
+*.iml
 
 # CMake
 cmake-build-*/
