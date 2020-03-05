@@ -11,7 +11,7 @@ I'm work with:
 Analysis and Test Automation with website [MyStore](http://automationpractice.com/index.php)
 
 ------------
-Dependencies:
+pom.xml:
 ```
 <dependencies>
         <dependency>
