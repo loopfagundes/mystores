@@ -4,10 +4,10 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
-public class LoginAppObject {
+public class AuthenticationAppObject {
     private WebDriver driver;
 
-    public LoginAppObject(WebDriver driver)  {
+    public AuthenticationAppObject(WebDriver driver)  {
         this.driver = driver;
     }
 

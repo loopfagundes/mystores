@@ -5,11 +5,13 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvFileSource;
 import org.openqa.selenium.WebDriver;
-import tasks.LoginTask;
+import tasks.AuthenticationTask;
+import tasks.MyAccountTask;
 
-public class MyStoreTestCase extends BaseTestFw {
+public class BuySuccessfullyTestCase extends BaseTestFw {
     private WebDriver driver = getDriver();
-    private LoginTask loginTask = new LoginTask(driver);
+    private AuthenticationTask authenticationTask = new AuthenticationTask(driver);
+    private MyAccountTask myAccountTask = new MyAccountTask(driver);
 
 
     @BeforeEach
@@ -20,6 +22,7 @@ public class MyStoreTestCase extends BaseTestFw {
     @ParameterizedTest
     @CsvFileSource(resources = "/data.csv", numLinesToSkip = 1)
     void test(String email, String password) {
-        loginTask.accessLogin(email, password);
+        authenticationTask.accessLogin(email, password);
+        myAccountTask.accessHome();
     }
 }
