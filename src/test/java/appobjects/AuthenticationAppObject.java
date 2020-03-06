@@ -31,7 +31,7 @@ public class AuthenticationAppObject {
         return driver.findElement(By.className("page-heading"));
     }
 
-    public WebElement getHomeButton(){
+    public WebElement getHomeButton() {
         return driver.findElement(By.cssSelector(".footer_links.clearfix .btn.btn-default.button.button-small"));
     }
 }
