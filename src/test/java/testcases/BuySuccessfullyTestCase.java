@@ -8,12 +8,14 @@ import org.openqa.selenium.WebDriver;
 import tasks.AuthenticationTask;
 import tasks.IndexTask;
 import tasks.MyAccountTask;
+import tasks.ProductsControllerTask;
 
 public class BuySuccessfullyTestCase extends BaseTestFw {
     private WebDriver driver = getDriver();
     private AuthenticationTask authenticationTask = new AuthenticationTask(driver);
     private MyAccountTask myAccountTask = new MyAccountTask(driver);
     private IndexTask indexTask = new IndexTask(driver);
+    private ProductsControllerTask productsControllerTask = new ProductsControllerTask(driver);
 
     @BeforeEach
     public void setUp() {
@@ -26,5 +28,6 @@ public class BuySuccessfullyTestCase extends BaseTestFw {
         authenticationTask.accessLogin(email, password);
         myAccountTask.accessMyAccount();
         indexTask.searchProduct();
+        productsControllerTask.chooseProduct();
     }
 }
