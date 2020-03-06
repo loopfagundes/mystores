@@ -23,6 +23,6 @@ public class BuySuccessfullyTestCase extends BaseTestFw {
     @CsvFileSource(resources = "/data.csv", numLinesToSkip = 1)
     void test(String email, String password) {
         authenticationTask.accessLogin(email, password);
-        myAccountTask.accessHome();
+        myAccountTask.accessMyAccount();
     }
 }

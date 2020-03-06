@@ -19,6 +19,5 @@ public class  AuthenticationTask {
         authenticationAppObject.getPasswordTextField().sendKeys(password);
         authenticationAppObject.getAccessSignInButton().click();
         Assertions.assertEquals("MY ACCOUNT", authenticationAppObject.getValidateMyAccountLabel().getText());
-        authenticationAppObject.getHomeButton().click();
     }
 }

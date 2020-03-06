@@ -14,4 +14,8 @@ public class MyAccountAppObject {
     public WebElement getHomeButton() {
         return driver.findElement(By.className("icon-home"));
     }
+
+    public WebElement getValidateMyAccountLabel() {
+        return driver.findElement(By.className("page-heading"));
+    }
 }

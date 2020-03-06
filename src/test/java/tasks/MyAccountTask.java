@@ -1,6 +1,7 @@
 package tasks;
 
 import appobjects.MyAccountAppObject;
+import org.junit.jupiter.api.Assertions;
 import org.openqa.selenium.WebDriver;
 
 public class MyAccountTask {
@@ -12,7 +13,8 @@ public class MyAccountTask {
         this.myAccountAppObject = new MyAccountAppObject(driver);
     }
 
-    public void accessHome() {
+    public void accessMyAccount() {
+        Assertions.assertEquals("MY ACCOUNT", myAccountAppObject.getValidateMyAccountLabel().getText());
         myAccountAppObject.getHomeButton().click();
     }
 }
