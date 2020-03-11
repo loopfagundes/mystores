@@ -5,10 +5,7 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvFileSource;
 import org.openqa.selenium.WebDriver;
-import tasks.AuthenticationTask;
-import tasks.IndexTask;
-import tasks.MyAccountTask;
-import tasks.ProductsControllerTask;
+import tasks.*;
 
 public class BuySuccessfullyTestCase extends BaseTestFw {
     private WebDriver driver = getDriver();
@@ -16,6 +13,7 @@ public class BuySuccessfullyTestCase extends BaseTestFw {
     private MyAccountTask myAccountTask = new MyAccountTask(driver);
     private IndexTask indexTask = new IndexTask(driver);
     private ProductsControllerTask productsControllerTask = new ProductsControllerTask(driver);
+    private ProductDetailsTask productDetailsTask = new ProductDetailsTask(driver);
 
     @BeforeEach
     public void setUp() {
@@ -29,5 +27,7 @@ public class BuySuccessfullyTestCase extends BaseTestFw {
         myAccountTask.accessMyAccount();
         indexTask.searchProduct();
         productsControllerTask.chooseProduct();
+        productDetailsTask.viewLagerPhoto();
+        productDetailsTask.buyProduct();
     }
 }

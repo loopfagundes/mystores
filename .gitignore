@@ -21,7 +21,7 @@
 *.rar
 
 ### Maven ###
-target/
+/target/
 pom.xml.tag
 pom.xml.releaseBackup
 pom.xml.versionsBackup
@@ -54,9 +54,6 @@ local.properties
 
 # Java annotation processor (APT)
 .factorypath
-
-# sbteclipse plugin
-.target
 
 # Tern plugin
 .tern-project
