@@ -14,6 +14,7 @@ public class  AuthenticationTask {
     }
 
     public void accessLogin(String email, String password) {
+        Assertions.assertEquals("My Store", driver.getTitle());
         authenticationAppObject.getSignInButton().click();
         authenticationAppObject.getEmailTextField().sendKeys(email);
         authenticationAppObject.getPasswordTextField().sendKeys(password);

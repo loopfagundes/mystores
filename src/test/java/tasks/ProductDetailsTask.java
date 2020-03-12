@@ -21,6 +21,7 @@ public class ProductDetailsTask {
     }
 
     public void buyProduct() {
+        Assertions.assertEquals("Printed Dress - My Store", driver.getTitle());
         productDetailsAppObject.getSizeButton().selectByValue("2");
         productDetailsAppObject.getAddToCartButton().click();
         Assertions.assertEquals("$26.00", productDetailsAppObject.getValdiatePriceProductLabel().getText());

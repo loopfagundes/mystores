@@ -15,6 +15,7 @@ public class IndexTask {
     }
 
     public void searchProduct() {
+        Assertions.assertEquals("My Store", driver.getTitle());
         indexAppObject.getSearchTextField().sendKeys("Dress");
         indexAppObject.getSearchTextField().sendKeys(Keys.ENTER);
         Assertions.assertEquals("\"DRESS\"", indexAppObject.getValidateSearchLabel().getText());

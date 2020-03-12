@@ -14,6 +14,7 @@ public class BuySuccessfullyTestCase extends BaseTestFw {
     private IndexTask indexTask = new IndexTask(driver);
     private ProductsControllerTask productsControllerTask = new ProductsControllerTask(driver);
     private ProductDetailsTask productDetailsTask = new ProductDetailsTask(driver);
+    private ShoppingCartSummaryTask shoppingCartSummaryTask = new ShoppingCartSummaryTask(driver);
 
     @BeforeEach
     public void setUp() {
@@ -29,5 +30,6 @@ public class BuySuccessfullyTestCase extends BaseTestFw {
         productsControllerTask.chooseProduct();
         productDetailsTask.viewLagerPhoto();
         productDetailsTask.buyProduct();
+        shoppingCartSummaryTask.pageShoppingSummary();
     }
 }
