@@ -12,6 +12,10 @@ public class ProductDetailsAppObject {
         this.driver = driver;
     }
 
+    public WebElement getValidateProductLabel() {
+        return driver.findElement(By.cssSelector(".pb-center-column.col-xs-12.col-sm-4 > h1"));
+    }
+
     public WebElement getLargerPictureButton() {
         return driver.findElement(By.id("thumb_8"));
     }

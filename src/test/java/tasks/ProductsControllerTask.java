@@ -15,7 +15,7 @@ public class ProductsControllerTask {
 
     public void chooseProduct() {
         Assertions.assertEquals("Search - My Store", driver.getTitle());
+        Assertions.assertEquals("\"DRESS\"", productsControllerAppObjects.getValidateSearchLabel().getText());
         productsControllerAppObjects.getChooseProductButton().click();
-        Assertions.assertEquals("Printed Dress", productsControllerAppObjects.getValidateProductLabel().getText());
     }
 }

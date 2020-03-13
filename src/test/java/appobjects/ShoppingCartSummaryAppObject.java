@@ -22,8 +22,4 @@ public class ShoppingCartSummaryAppObject {
     public WebElement getProceedToCheckoutButton() {
         return driver.findElement(By.cssSelector("p.cart_navigation.clearfix > a.button.btn.btn-default.standard-checkout.button-medium > span"));
     }
-
-    public WebElement getCommentTextField() {
-        return driver.findElement(By.className("form-control"));
-    }
 }

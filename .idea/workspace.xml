@@ -2,12 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e0164bd2-4a48-4a60-b589-f941e5c2b461" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/test/java/tasks/MyStoreTask.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/luciano_fagundes.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/luciano_fagundes.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/appobjects/AuthenticationAppObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/appobjects/AuthenticationAppObject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/appobjects/IndexAppObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/appobjects/MyStoreAppObject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/appobjects/MyAccountAppObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/appobjects/MyAccountAppObject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/appobjects/ProductDetailsAppObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/appobjects/ProductDetailsAppObject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/appobjects/ProductsControllerAppObjects.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/appobjects/ProductsControllerAppObjects.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/appobjects/ShoppingCartSummaryAppObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/appobjects/ShoppingCartSummaryAppObject.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/tasks/AuthenticationTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tasks/AuthenticationTask.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tasks/IndexTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tasks/IndexTask.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tasks/IndexTask.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/tasks/MyAccountTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tasks/MyAccountTask.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/tasks/ProductDetailsTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tasks/ProductDetailsTask.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/tasks/ProductsControllerTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tasks/ProductsControllerTask.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tasks/ShoppingCartSummaryTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tasks/ShoppingCartSummaryTask.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/testcases/BuySuccessfullyTestCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testcases/BuySuccessfullyTestCase.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -45,7 +54,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="ignore.virus.scanning.warn.message" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../replicado" />
     <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
   </component>
   <component name="RunManager" selected="JUnit.BuySuccessfullyTestCase">
@@ -165,35 +174,39 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="92" y="92" width="1736" height="856" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1584030072010" />
+    <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1584032407341">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1584032407341" />
     <state x="577" y="114" key="CommitChangelistDialog2" timestamp="1582221538343">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="577" y="114" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1582221538343" />
-    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1583953658091">
+    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1584105476035">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1583953658091" />
-    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1583930597544" />
-    <state width="1877" height="194" key="GridCell.Tab.0.bottom" timestamp="1584030653542">
+    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1584105476035" />
+    <state width="1877" height="194" key="GridCell.Tab.0.bottom" timestamp="1584104965509">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="206" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1583953660020" />
-    <state width="1877" height="194" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1584030653542" />
-    <state width="1877" height="194" key="GridCell.Tab.0.center" timestamp="1584030653542">
+    <state width="1877" height="194" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1584104965509" />
+    <state width="1877" height="194" key="GridCell.Tab.0.center" timestamp="1584104965509">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="206" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1583953660020" />
-    <state width="1877" height="194" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1584030653542" />
-    <state width="1877" height="194" key="GridCell.Tab.0.left" timestamp="1584030653542">
+    <state width="1877" height="194" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1584104965509" />
+    <state width="1877" height="194" key="GridCell.Tab.0.left" timestamp="1584104965509">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="206" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1583953660019" />
-    <state width="1877" height="194" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1584030653542" />
-    <state width="1877" height="194" key="GridCell.Tab.0.right" timestamp="1584030653542">
+    <state width="1877" height="194" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1584104965509" />
+    <state width="1877" height="194" key="GridCell.Tab.0.right" timestamp="1584104965509">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="206" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1583953660020" />
-    <state width="1877" height="194" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1584030653542" />
+    <state width="1877" height="194" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1584104965509" />
     <state x="461" y="162" key="SettingsEditor" timestamp="1582291382864">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

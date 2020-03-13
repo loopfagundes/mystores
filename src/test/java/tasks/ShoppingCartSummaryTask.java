@@ -18,6 +18,5 @@ public class ShoppingCartSummaryTask {
         Assertions.assertEquals("SHOPPING-CART SUMMARY\nYour shopping cart contains: 1 Product", shoppingCartSummaryAppObject.getValidatePageLabel().getText());
         Assertions.assertEquals("$28.00", shoppingCartSummaryAppObject.getValidatePriceTotalLabel().getText());
         shoppingCartSummaryAppObject.getProceedToCheckoutButton().click();
-        shoppingCartSummaryAppObject.getCommentTextField().sendKeys("I'am deaf");
     }
 }

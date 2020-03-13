@@ -15,7 +15,7 @@ public class MyAccountTask {
 
     public void accessMyAccount() {
         Assertions.assertEquals("My account - My Store", driver.getTitle());
-        Assertions.assertEquals("MY ACCOUNT", myAccountAppObject.getValidateMyAccountLabel().getText());
+        Assertions.assertEquals("MY ACCOUNT", myAccountAppObject.getValidatePageMyAccountLabel().getText());
         myAccountAppObject.getHomeButton().click();
     }
 }

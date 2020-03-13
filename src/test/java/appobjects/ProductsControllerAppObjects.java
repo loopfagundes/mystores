@@ -11,11 +11,11 @@ public class ProductsControllerAppObjects {
         this.driver = driver;
     }
 
-    public WebElement getChooseProductButton() {
-        return driver.findElement(By.cssSelector("#center_column > ul > li:nth-child(5) > div > div.left-block > div > a.product_img_link > img"));
+    public WebElement getValidateSearchLabel() {
+        return driver.findElement(By.className("lighter"));
     }
 
-    public WebElement getValidateProductLabel() {
-        return driver.findElement(By.cssSelector(".pb-center-column.col-xs-12.col-sm-4 > h1"));
+    public WebElement getChooseProductButton() {
+        return driver.findElement(By.cssSelector("#center_column > ul > li:nth-child(5) > div > div.left-block > div > a.product_img_link > img"));
     }
 }

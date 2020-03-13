@@ -1,9 +1,7 @@
 package tasks;
 
 import appobjects.ProductDetailsAppObject;
-import frameworks.UtilsFw;
 import org.junit.jupiter.api.Assertions;
-import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 
 public class ProductDetailsTask {
@@ -15,12 +13,11 @@ public class ProductDetailsTask {
         this.productDetailsAppObject = new ProductDetailsAppObject(driver);
     }
 
-    public void viewLagerPhoto() {
-        productDetailsAppObject.getLargerPictureButton().click();
-        productDetailsAppObject.getClosePictureButton().click();
-    }
 
     public void buyProduct() {
+        Assertions.assertEquals("Printed Dress", productDetailsAppObject.getValidateProductLabel().getText());
+        productDetailsAppObject.getLargerPictureButton().click();
+        productDetailsAppObject.getClosePictureButton().click();
         Assertions.assertEquals("Printed Dress - My Store", driver.getTitle());
         productDetailsAppObject.getSizeButton().selectByValue("2");
         productDetailsAppObject.getAddToCartButton().click();

@@ -11,10 +11,11 @@ public class BuySuccessfullyTestCase extends BaseTestFw {
     private WebDriver driver = getDriver();
     private AuthenticationTask authenticationTask = new AuthenticationTask(driver);
     private MyAccountTask myAccountTask = new MyAccountTask(driver);
-    private IndexTask indexTask = new IndexTask(driver);
+    private MyStoreTask myStoreTask = new MyStoreTask(driver);
     private ProductsControllerTask productsControllerTask = new ProductsControllerTask(driver);
     private ProductDetailsTask productDetailsTask = new ProductDetailsTask(driver);
     private ShoppingCartSummaryTask shoppingCartSummaryTask = new ShoppingCartSummaryTask(driver);
+    private AddressTask addressTask = new AddressTask(driver);
 
     @BeforeEach
     public void setUp() {
@@ -26,10 +27,10 @@ public class BuySuccessfullyTestCase extends BaseTestFw {
     void test(String email, String password) {
         authenticationTask.accessLogin(email, password);
         myAccountTask.accessMyAccount();
-        indexTask.searchProduct();
+        myStoreTask.searchProduct();
         productsControllerTask.chooseProduct();
-        productDetailsTask.viewLagerPhoto();
         productDetailsTask.buyProduct();
         shoppingCartSummaryTask.pageShoppingSummary();
+        addressTask.reviewAdresses();
     }
 }
