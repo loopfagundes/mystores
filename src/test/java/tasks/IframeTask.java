@@ -18,9 +18,8 @@ public class IframeTask {
         iframeAppObject.getChooseProduct().click();
     }
 
-    public void iframeValidateQtyProduct() {
+    public void iframeQtyProduct() {
         iframeAppObject.getIframeQtyProductTextField().clear();
         iframeAppObject.getIframeQtyProductTextField().sendKeys(quantityProduct);
-        Assertions.assertEquals(quantityProduct, iframeAppObject.getIframeQtyProductTextField().getText(), "quantity is not correct");
     }
 }

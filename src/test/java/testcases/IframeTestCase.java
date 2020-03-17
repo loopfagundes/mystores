@@ -18,6 +18,6 @@ public class IframeTestCase extends BaseTestFw {
     @Test
     void test() {
         iframeTask.chooseProduct();
-        iframeTask.iframeValidateQtyProduct();
+        iframeTask.iframeQtyProduct();
     }
 }
