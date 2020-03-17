@@ -52,9 +52,6 @@ local.properties
 /idea/
 *.iml
 
-# CMake
-cmake-build-*/
-
 # File-based project format
 *.iws
 
