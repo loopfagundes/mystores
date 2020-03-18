@@ -16,6 +16,7 @@ public class BuySuccessfullyTestCase extends BaseTestFw {
     private ProductDetailsTask productDetailsTask = new ProductDetailsTask(driver);
     private ShoppingCartSummaryTask shoppingCartSummaryTask = new ShoppingCartSummaryTask(driver);
     private AddressTask addressTask = new AddressTask(driver);
+    private ShippingTask shippingTask = new ShippingTask(driver);
 
     @BeforeEach
     public void setUp() {

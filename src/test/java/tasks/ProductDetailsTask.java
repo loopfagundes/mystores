@@ -8,6 +8,7 @@ public class ProductDetailsTask {
     private WebDriver driver;
     private ProductDetailsAppObject productDetailsAppObject;
 
+
     public ProductDetailsTask(WebDriver driver) {
         this.driver = driver;
         this.productDetailsAppObject = new ProductDetailsAppObject(driver);

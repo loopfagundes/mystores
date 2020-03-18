@@ -16,7 +16,7 @@ public class IframeTestCase extends BaseTestFw {
     }
 
     @Test
-    void test() {
+    void test() throws InterruptedException {
         iframeTask.chooseProduct();
         iframeTask.iframeQtyProduct();
     }
