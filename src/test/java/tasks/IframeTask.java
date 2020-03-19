@@ -1,7 +1,6 @@
 package tasks;
 
 import appobjects.IframeAppObject;
-import org.junit.jupiter.api.Assertions;
 import org.openqa.selenium.WebDriver;
 
 public class IframeTask {
@@ -19,13 +18,10 @@ public class IframeTask {
         iframeAppObject.getChooseProduct().click();
     }
 
-    public void iframeQtyProduct() throws InterruptedException {
+    public void iframeQtyProduct() {
         iframeAppObject.getIframeQtyProductTextField().clear();
         iframeAppObject.getIframeQtyProductTextField().sendKeys(Integer.toString(quantityProduct));
         iframeAppObject.getSizeProductComboBox().selectByVisibleText(size);
-        System.out.println(driver.getPageSource());
-        Thread.sleep(30);
-        System.out.println(iframeAppObject.getValidateQuantityProduct().getText());
-        Assertions.assertEquals(quantityProduct, iframeAppObject.getValidateQuantityProduct().getText());
+        iframeAppObject.getIframeAddToCartButton().click();
     }
 }

@@ -1,6 +1,7 @@
 package tasks;
 
 import appobjects.ShippingAppObject;
+import org.junit.jupiter.api.Assertions;
 import org.openqa.selenium.WebDriver;
 
 public class ShippingTask {
@@ -13,6 +14,17 @@ public class ShippingTask {
     }
 
     public void validateShippingAndAdress() {
-        System.out.println(shippingAppObject.getValidatePageLabel().getText());
+        Assertions.assertEquals("Order - My Store", driver.getTitle(), "Shipping: Tab page title is not correct");
+        Assertions.assertEquals("SHIPPING", shippingAppObject.getValidatePageLabel().getText());
+        Assertions.assertEquals("2.00", shippingAppObject.getValidatePriceDeliveryLabel().getText().replace("$",""));
+    }
+
+    public void checkBoxAndProceedToCheckout() {
+        if (shippingAppObject.getTermsOfServiceCheckBox().isSelected()) {
+            System.out.println("Checkbox was already selected: " + shippingAppObject.getTermsOfServiceCheckBox().toString());
+        } else {
+            shippingAppObject.getTermsOfServiceCheckBox().click();
+        }
+        shippingAppObject.getProceedToCheckoutButton().click();
     }
 }

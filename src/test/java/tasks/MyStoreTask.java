@@ -15,7 +15,7 @@ public class MyStoreTask {
     }
 
     public void searchProduct() {
-        Assertions.assertEquals("My Store", driver.getTitle());
+        Assertions.assertEquals("My Store", driver.getTitle(), "MyStore: Tab page title is not correct");
         myStoreAppObject.getSearchTextField().sendKeys("Dress");
         myStoreAppObject.getSearchTextField().sendKeys(Keys.ENTER);
     }

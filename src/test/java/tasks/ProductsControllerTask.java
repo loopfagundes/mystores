@@ -14,7 +14,7 @@ public class ProductsControllerTask {
     }
 
     public void chooseProduct() {
-        Assertions.assertEquals("Search - My Store", driver.getTitle());
+        Assertions.assertEquals("Search - My Store", driver.getTitle(),"ProductsController: Tab page title is not correct");
         Assertions.assertEquals("\"DRESS\"", productsControllerAppObjects.getValidateSearchLabel().getText());
         productsControllerAppObjects.getChooseProductButton().click();
     }

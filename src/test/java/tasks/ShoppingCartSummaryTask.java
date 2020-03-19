@@ -14,9 +14,9 @@ public class ShoppingCartSummaryTask {
     }
 
     public void pageShoppingSummary() {
-        Assertions.assertEquals("Order - My Store", driver.getTitle());
+        Assertions.assertEquals("Order - My Store", driver.getTitle(),"Page title is not correct");
         Assertions.assertEquals("SHOPPING-CART SUMMARY\nYour shopping cart contains: 1 Product", shoppingCartSummaryAppObject.getValidatePageLabel().getText());
-        Assertions.assertEquals("$28.00", shoppingCartSummaryAppObject.getValidatePriceTotalLabel().getText());
+        Assertions.assertEquals("28.00", shoppingCartSummaryAppObject.getValidatePriceTotalLabel().getText().replace("$",""));
         shoppingCartSummaryAppObject.getProceedToCheckoutButton().click();
     }
 }

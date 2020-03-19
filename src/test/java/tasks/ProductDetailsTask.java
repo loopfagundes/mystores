@@ -17,12 +17,15 @@ public class ProductDetailsTask {
 
     public void buyProduct() {
         Assertions.assertEquals("Printed Dress", productDetailsAppObject.getValidateProductLabel().getText());
+        Assertions.assertEquals("Printed Dress - My Store", driver.getTitle(),"ProductDetails: Page title is not correct");
         productDetailsAppObject.getLargerPictureButton().click();
         productDetailsAppObject.getClosePictureButton().click();
-        Assertions.assertEquals("Printed Dress - My Store", driver.getTitle());
         productDetailsAppObject.getSizeButton().selectByValue("2");
+        Assertions.assertEquals("26.00", productDetailsAppObject.getValdiatePriceProductLabel().getText().replace("$",""),"Price Product is not correct");
         productDetailsAppObject.getAddToCartButton().click();
-        Assertions.assertEquals("$26.00", productDetailsAppObject.getValdiatePriceProductLabel().getText());
+    }
+
+    public void modal() {
         productDetailsAppObject.getProceedToCheckoutButton().click();
     }
 }

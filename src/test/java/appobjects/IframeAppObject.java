@@ -31,7 +31,7 @@ public class IframeAppObject {
         return new Select(driver.findElement(By.id("group_1")));
     }
 
-    public WebElement getValidateQuantityProduct() {
-        return driver.findElement(By.id("layer_cart_product_quantity"));
+    public WebElement getIframeAddToCartButton() {
+        return driver.findElement(By.cssSelector("#add_to_cart > button"));
     }
 }

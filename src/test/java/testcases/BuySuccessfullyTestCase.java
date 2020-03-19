@@ -31,7 +31,9 @@ public class BuySuccessfullyTestCase extends BaseTestFw {
         myStoreTask.searchProduct();
         productsControllerTask.chooseProduct();
         productDetailsTask.buyProduct();
+        productDetailsTask.modal();
         shoppingCartSummaryTask.pageShoppingSummary();
         addressTask.reviewAdresses();
+        shippingTask.validateShippingAndAdress();
     }
 }
