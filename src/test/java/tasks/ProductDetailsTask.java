@@ -21,7 +21,7 @@ public class ProductDetailsTask {
         productDetailsAppObject.getLargerPictureButton().click();
         productDetailsAppObject.getClosePictureButton().click();
         productDetailsAppObject.getSizeButton().selectByValue("2");
-        Assertions.assertEquals("26.00", productDetailsAppObject.getValdiatePriceProductLabel().getText().replace("$",""),"Price Product is not correct");
+        Assertions.assertEquals("26.00", productDetailsAppObject.getValdiatePriceProductLabel().getText().replace("$",""),"ProductDetails: Price Product is not correct");
         productDetailsAppObject.getAddToCartButton().click();
     }
 

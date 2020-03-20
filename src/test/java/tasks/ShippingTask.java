@@ -25,6 +25,7 @@ public class ShippingTask {
         } else {
             shippingAppObject.getTermsOfServiceCheckBox().click();
         }
+        Assertions.assertTrue(shippingAppObject.getTermsOfServiceCheckBox().isSelected());
         shippingAppObject.getProceedToCheckoutButton().click();
     }
 }

@@ -17,6 +17,7 @@ public class BuySuccessfullyTestCase extends BaseTestFw {
     private ShoppingCartSummaryTask shoppingCartSummaryTask = new ShoppingCartSummaryTask(driver);
     private AddressTask addressTask = new AddressTask(driver);
     private ShippingTask shippingTask = new ShippingTask(driver);
+    private PaymentTask paymentTask = new PaymentTask(driver);
 
     @BeforeEach
     public void setUp() {
@@ -35,5 +36,8 @@ public class BuySuccessfullyTestCase extends BaseTestFw {
         shoppingCartSummaryTask.pageShoppingSummary();
         addressTask.reviewAdresses();
         shippingTask.validateShippingAndAdress();
+        shippingTask.checkBoxAndProceedToCheckout();
+        paymentTask.prepaymentReview();
+        paymentTask.payment();
     }
 }
