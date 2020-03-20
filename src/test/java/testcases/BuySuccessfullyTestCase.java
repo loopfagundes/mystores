@@ -19,6 +19,7 @@ public class BuySuccessfullyTestCase extends BaseTestFw {
     private ShippingTask shippingTask = new ShippingTask(driver);
     private PaymentTask paymentTask = new PaymentTask(driver);
     private OrderSummaryTask orderSummaryTask = new OrderSummaryTask(driver);
+    private OrderConfirmationTask orderConfirmationTask = new OrderConfirmationTask(driver);
 
     @BeforeEach
     public void setUp() {
@@ -41,5 +42,6 @@ public class BuySuccessfullyTestCase extends BaseTestFw {
         paymentTask.prepaymentReview();
         paymentTask.payment();
         orderSummaryTask.reviewOrderSummary();
+        orderConfirmationTask.validateOrder();
     }
 }

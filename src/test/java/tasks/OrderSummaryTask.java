@@ -14,7 +14,7 @@ public class OrderSummaryTask {
     }
 
     public void reviewOrderSummary() {
-        Assertions.assertEquals("My Store", driver.getTitle());
+        Assertions.assertEquals("My Store", driver.getTitle(), "OrderSummary: Tab page title is not correct");
         Assertions.assertEquals("ORDER SUMMARY", orderSummaryAppObject.getValidatePageLabel().getText());
         orderSummaryAppObject.getConfirmButton().click();
     }
