@@ -7,7 +7,7 @@ import org.openqa.selenium.WebDriver;
 public class AddressTask {
     private WebDriver driver;
     private AddressAppObject addressAppObject;
-    private static final String obs = "I'am deaf...";
+    private static final String obs = "I'am deaf";
 
     public AddressTask(WebDriver driver) {
         this.driver = driver;
