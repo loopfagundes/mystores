@@ -1,6 +1,7 @@
 package tasks;
 
 import appobjects.IframeAppObject;
+import frameworks.ScreenshotFw;
 import org.openqa.selenium.WebDriver;
 
 public class IframeTask {
@@ -19,9 +20,12 @@ public class IframeTask {
     }
 
     public void iframeQtyProduct() {
+        System.out.println("Tab Title: " + driver.getTitle());
+        ScreenshotFw.viewScreenshot(driver, "title page");
         iframeAppObject.getIframeQtyProductTextField().clear();
         iframeAppObject.getIframeQtyProductTextField().sendKeys(Integer.toString(quantityProduct));
         iframeAppObject.getSizeProductComboBox().selectByVisibleText(size);
         iframeAppObject.getIframeAddToCartButton().click();
+
     }
 }
