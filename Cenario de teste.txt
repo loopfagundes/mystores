@@ -25,7 +25,7 @@ E: Validacao o titulo aba de navegador e a pagina de Shipping(remessa) se confer
 E: O usuario deve clicar a marcar no checkbox "Terms of service", validacao o preco da Delivery(entrega) e conferir se o usuario ja clicou checkbox 
 	e depois o usuario deve clicar a botao "Procced To Checkout" 
 E: Validacao o titulo aba de navegador e a pagina de Payment se conferir que o usuario esta acessando na pagina de Payment
-E: Conferir e validacoes unidade preco, quantidade, total produto, total remessa e total geralmente e depois o usuario deve clicar a botao opacao de "Pay by wire"
+E: Conferir e validacoes unidade preco, quantidade, total produto, total remessa e total geralmente e depois o usuario deve clicar a botao opcao de "Pay by wire"
 E: Validacao o titulo aba de navegador e a pagina de Order Summary(Ordem resumo) se conferir que o usuario esta acessando na pagina de Order Summary
 E: Validacao o titulo dentro da pagina e o usuario deve clicar a botao "I confirm my order" para confirmar de finalizacao da comprar 
 
