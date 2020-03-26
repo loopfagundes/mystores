@@ -13,7 +13,7 @@ public class ScreenshotFw {
         TakesScreenshot screen = (TakesScreenshot) driver;
         File screenFile = screen.getScreenshotAs(OutputType.FILE);
         try {
-            FileUtils.copyFile(screenFile, new File("screenshot" + File.separator + imageName + DateTimeFormatterFw.getTime() + ".jpg"));
+            FileUtils.copyFile(screenFile, new File("screenshot" + File.separator + imageName + ".jpg"));
         } catch (IOException e) {
             System.out.println("Screenshot error");
             e.printStackTrace();
