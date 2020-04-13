@@ -1,13 +1,12 @@
 package testcases;
 
 import frameworks.BaseTestFw;
-import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.*;
 import org.openqa.selenium.WebDriver;
 import tasks.IframeTask;
 
 public class IframeTestCase extends BaseTestFw {
-    private WebDriver driver = getDriver();
+    private WebDriver driver ;
     private IframeTask iframeTask = new IframeTask(driver);
 
     @BeforeEach

@@ -9,11 +9,23 @@ import java.io.File;
 import java.io.IOException;
 
 public class ScreenshotFw {
+
     public static void viewScreenshot(WebDriver driver, String imageName) {
         TakesScreenshot screen = (TakesScreenshot) driver;
         File screenFile = screen.getScreenshotAs(OutputType.FILE);
         try {
-            FileUtils.copyFile(screenFile, new File("screenshot" + File.separator + imageName + ".jpg"));
+            FileUtils.copyFile(screenFile, new File("screenshot" + File.separator + imageName + System.nanoTime() + ".jpg"));
+        } catch (IOException e) {
+            System.out.println("Screenshot error");
+            e.printStackTrace();
+        }
+    }
+
+    public static void takeView (WebDriver driver, String imageName) {
+        TakesScreenshot screen = (TakesScreenshot) driver;
+        File screenFile = screen.getScreenshotAs(OutputType.FILE);
+        try {
+            FileUtils.copyFile(screenFile, new File("target" + File.separator + "screenshot" + File.separator + imageName + System.nanoTime() + ".jpg"));
         } catch (IOException e) {
             System.out.println("Screenshot error");
             e.printStackTrace();

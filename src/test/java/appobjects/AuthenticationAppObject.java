@@ -20,7 +20,7 @@ public class AuthenticationAppObject {
     }
 
     public WebElement getPasswordTextField() {
-        return driver.findElement(By.id("passwd"));
+        return driver.findElement(By.id(""));
     }
 
     public WebElement getAccessSignInButton() {

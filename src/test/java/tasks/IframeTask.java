@@ -1,7 +1,10 @@
 package tasks;
 
 import appobjects.IframeAppObject;
+import frameworks.JsExecutorFw;
 import frameworks.ScreenshotFw;
+import org.junit.Assert;
+import org.junit.jupiter.api.Assertions;
 import org.openqa.selenium.WebDriver;
 
 public class IframeTask {
@@ -20,12 +23,12 @@ public class IframeTask {
     }
 
     public void iframeQtyProduct() {
-        System.out.println("Tab Title: " + driver.getTitle());
-        ScreenshotFw.viewScreenshot(driver, "title page");
+        Assertions.assertEquals("Search - My Store", driver.getTitle());
         iframeAppObject.getIframeQtyProductTextField().clear();
         iframeAppObject.getIframeQtyProductTextField().sendKeys(Integer.toString(quantityProduct));
+        JsExecutorFw.highlight(driver, iframeAppObject.getIframeQtyProductTextField());
+        ScreenshotFw.viewScreenshot(driver, "QtyProductTestScreen");
         iframeAppObject.getSizeProductComboBox().selectByVisibleText(size);
         iframeAppObject.getIframeAddToCartButton().click();
-
     }
 }
