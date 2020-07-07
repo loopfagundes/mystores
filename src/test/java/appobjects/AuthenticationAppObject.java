@@ -7,7 +7,7 @@ import org.openqa.selenium.WebElement;
 public class AuthenticationAppObject {
     private WebDriver driver;
 
-    public AuthenticationAppObject(WebDriver driver)  {
+    public AuthenticationAppObject(WebDriver driver) {
         this.driver = driver;
     }
 
@@ -20,18 +20,14 @@ public class AuthenticationAppObject {
     }
 
     public WebElement getPasswordTextField() {
-        return driver.findElement(By.id("passwd"));
+        return driver.findElement(By.id(""));
     }
 
     public WebElement getAccessSignInButton() {
         return driver.findElement(By.id("SubmitLogin"));
     }
 
-    public WebElement getValidateMyAccountLabel() {
+    public WebElement getValidatePageMyAccountLabel() {
         return driver.findElement(By.className("page-heading"));
-    }
-
-    public WebElement getHomeButton() {
-        return driver.findElement(By.cssSelector(".footer_links.clearfix .btn.btn-default.button.button-small"));
     }
 }

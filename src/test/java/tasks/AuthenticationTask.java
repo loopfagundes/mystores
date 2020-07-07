@@ -14,11 +14,11 @@ public class  AuthenticationTask {
     }
 
     public void accessLogin(String email, String password) {
+        Assertions.assertEquals("My Store", driver.getTitle(),"Authentication: Tab page title is not correct");
         authenticationAppObject.getSignInButton().click();
+        Assertions.assertEquals("AUTHENTICATION", authenticationAppObject.getValidatePageMyAccountLabel().getText());
         authenticationAppObject.getEmailTextField().sendKeys(email);
         authenticationAppObject.getPasswordTextField().sendKeys(password);
         authenticationAppObject.getAccessSignInButton().click();
-        Assertions.assertEquals("MY ACCOUNT", authenticationAppObject.getValidateMyAccountLabel().getText());
-        authenticationAppObject.getHomeButton().click();
     }
 }

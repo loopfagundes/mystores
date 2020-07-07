@@ -1,0 +1,36 @@
+Cenario de Teste: Acessar Login e finalizacao de comprar na loja de virtual com sucesso.
+
+DADO: Abrir navegador de Chrome e o usuario acessa no site http://automationpractice.com/index.php
+
+E: Deve clicar a botao Sign in para acessar tela de login
+E: Validacao o titulo aba de navegador e a pagina de Authentication se conferir que o usuario esta acessando a tela login
+E: Usuario deve ser preencher nos campos de Email Address, password e clicar Sign in
+E: Validacao o titulo aba de navegador e a pagina de My Account para conferir que o usuario esta acessando a tela My Account
+E: Verificar na pagina My Account e clicar a botao "Home" embaixo para pagina inicio
+E: Validacao o titulo aba de navegador e a pagina de inicio MyStore e conferir se o usuario esta acessando a tela de inicio
+E: O usuario clicar no campo Search para buscar dos produtos que usuario desejar
+E: O usuario deve ser preencher "Dress" no campo de buscar e clicar no teclado ENTER
+E: Validacao o titulo aba de navegador e a pagina dos produtos para conferir que o usuario ja preencheu no campo "search"(buscar)
+E: Escolher um produto e clicar o produto que ja escolheu "Printed Dress" unico cor orange(laranja)
+E: Validacao o titulo aba de navegador e a pagina do produto Printed Dress que o usuario escolheu
+E: O usuario deve clicar na imagem para ampliacao e conferir o produto e clicar do teclado ESC para fechar a imagem da ampliacao
+E: O usuario deve ser preencher no campo "Quantity"(Quantidade) e alterar o Size(Tamanho) no combobox e clicar "M", e o usuario deve clicar a botao "Add To Cart"(Adiciona no carrinho)
+E: Deve ser aparecer a modal que informacao que o produto ja esta no carrinho com sucesso para conferir e clicar a botao "Procced To Checkout"(Processado para verificacao de saida)
+E: Validacao o titulo aba de navegador e a pagina de Shopping-Cart Summy se conferir que o usuario esta acessando na pagina de Shopping-Cart Summy
+E: Dentro a pagina de Summary(resumo) e valdiacoes e conferir a preco e clicar a botao "Procced To Checkout"
+E: Validacao o titulo aba de navegador e a pagina de Address se conferir que o usuario esta acessando na pagina de Address
+E: Validacao a pagina dentro o titulo "Your Delivery Adress" e cada nome, sobrenome, endereco, bairro, cep, cidade e o numero de telefone, 
+	e o digite "I'am deaf" no campo dos comentarios e o usuario deve clicar a botao "Procced To Checkout"
+E: Validacao o titulo aba de navegador e a pagina de Shipping(remessa) se conferir que o usuario esta acessando na pagina de Shipping
+E: O usuario deve clicar a marcar no checkbox "Terms of service", validacao o preco da Delivery(entrega) e conferir se o usuario ja clicou checkbox 
+	e depois o usuario deve clicar a botao "Procced To Checkout" 
+E: Validacao o titulo aba de navegador e a pagina de Payment se conferir que o usuario esta acessando na pagina de Payment
+E: Conferir e validacoes unidade preco, quantidade, total produto, total remessa e total geralmente e depois o usuario deve clicar a botao opcao de "Pay by wire"
+E: Validacao o titulo aba de navegador e a pagina de Order Summary(Ordem resumo) se conferir que o usuario esta acessando na pagina de Order Summary
+E: Validacao o titulo dentro da pagina e o usuario deve clicar a botao "I confirm my order" para confirmar de finalizacao da comprar 
+
+QUANDO: O usuario ja confirmado de comprar e deve ser aparecer a mensagem "Your order on My Store is complete."
+
+ENTAO: O usuario ja finalizou de comprar na loja virtual com sucesso.
+
+

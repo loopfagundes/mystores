@@ -16,7 +16,7 @@ public class DriverManagerFactoryFw {
     private static WebDriver driver;
 
     private static WebDriver getManager(DriverTypeFw type) {
-        switch (type) {
+        switch(type) {
             case CHROME:
                 WebDriverManager.chromedriver().setup();
                 driver = new ChromeDriver();

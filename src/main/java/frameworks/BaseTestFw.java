@@ -2,7 +2,6 @@ package frameworks;
 
 import org.junit.jupiter.api.AfterEach;
 import org.openqa.selenium.WebDriver;
-
 import static frameworks.DriverManagerFactoryFw.quitDriver;
 import static frameworks.DriverManagerFactoryFw.setDriver;
 
